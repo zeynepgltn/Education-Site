@@ -1,0 +1,485 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Padding: İç boşluk, öğenin içerik ile sınırları arasında.
+Margin: Dış boşluk, öğenin sınırları ile diğer öğeler veya kenarlar arasında. */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+/* navbar */
+nav {
+    width: 100%;
+    /* bir div etiketine bu stil eklenirse, o div içinde bulunduğu kapsayıcı elementin genişliğini tamamen doldurur*/
+    font-family: Montserrat;
+    background-color: #2E3949;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: fixed;
+    z-index: 500;
+}
+
+.contanier {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* tüm harfler büyük oldu */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* NAVBAR */
+
+#logo-box {
+
+    float: left;
+    padding-top: 0.5rem;
+}
+
+#logo-box .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-left: 2rem;
+}
+
+#nav-links {
+    padding-right: 10rem;
+    float: right;
+}
+
+#nav-links .nav-link {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fff;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.4s;
+    /* renk değişme hızı */
+}
+
+#nav-links .nav-item {
+    list-style: none;
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-link:hover {
+    color: #57B99C;
+}
+
+#nav-links .nav-icon{
+    display: none;
+}
+
+@media (max-width: 992px) {
+    #logo-box {
+        float: none;
+        text-align: left;
+    }
+
+    #nav-links {
+        float: none;
+    }
+
+    #nav-links .nav-link {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    #nav-links .nav-item {
+        float: none;
+        text-align: left;
+    }
+
+    #nav-links .nav-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+}
+/* HEADER */
+header {
+    background-color: #1ABC9B;
+    height: 680px;
+    padding-top: calc(106px + 7rem);
+    text-align: center;
+}
+
+.img {
+    max-width: 256px;
+    height: auto;
+    /* en boy oranı */
+}
+
+header h1 {
+    color: #fff;
+    font-size: 6rem;
+}
+
+.star-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.star-dark {
+    border-color: #2D3D4f;
+    color: #2D3D4f;
+}
+
+.star-light,
+.star-dark {
+    border: none;
+    border-top: 0.5rem solid;
+    max-width: 25rem;
+    border-radius: 10px;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+
+.star-light::after {
+    background-color: #1ABC9B;
+}
+
+.star-dark::after {
+    background-color: #fff;
+}
+
+.star-light::after,
+.star-dark::after {
+    content: "\2605";
+    font-weight: 900;
+    font-size: 3.2rem;
+    top: -26px;
+    position: relative;
+    padding: 0 8px;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+/* PORTFOLIO */
+section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 4.8rem;
+    color: #2D3D4F;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.img-fluid-p {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 13px;
+}
+
+.star-dark::after {
+    color: #2D3D4f;
+}
+
+.col {
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1ABC9B;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.img-overlay .icon {
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* normal de konumlandırma orta noktaya göre yapılırken köşeye göre yapılacak */
+    color: #fff;
+}
+
+.portfolio-item:hover .img-overlay {
+    opacity: 0.8;
+    border-radius: 13px;
+}
+
+/*ABOUT*/
+#about {
+    background-color: #1ABC9B;
+    color: #fff;
+}
+
+#about h2 {
+    font-size: 4.8rem;
+}
+
+#about-text {
+    text-align: left;
+}
+
+#about-text .left {
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
+}
+
+#about .right {
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
+}
+
+@media  (min-width: 992px) {
+    #about-text .left {
+        float: left;
+        width: 50%;
+        padding-right: 5rem;
+        padding-left: 25rem;
+    }
+    
+    #about .right {
+        float: right;
+        width: 50%;
+        padding-right: 25rem;
+        padding-left: 5rem;
+    }
+    
+}
+#about-text .text {
+    font-size: 2rem;
+}
+
+.button {
+    padding-top: 23rem;
+    text-align: center;
+}
+
+#download {
+    padding-top: 23rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #1ABC9B;
+    padding: 2rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    /* farenin buton üstünde el işareti olması */
+    transition: all 0.5s;
+}
+
+#download:hover {
+    background-color: #fff;
+    color: #212529;
+}
+
+/*CONTACT*/
+.con-h {
+    color: #2C3E50;
+    font-size: 4.5rem;
+}
+
+.btn {
+    text-align: center;
+    background-color: #1ABC9B;
+    color: #fff;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    background-color: #0c836b;
+    color: #fff;
+}
+
+#con-form{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group{
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.form-group input,.form-group textarea{
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+}
+
+.form-group input:focus{
+    outline: 0;
+}
+
+.form-group textarea:focus{
+    outline: 0;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    background-color: #2C3E4F;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+footer h4{
+    font-size: 2.4rem;
+}
+
+.col p{
+   font-size: 2rem;
+   margin-top: 1rem;
+}
+
+.col li{
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 2rem;
+    margin-right: 0.4rem ;
+}
+
+.col button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    line-height: 2rem;
+    font-size: 2rem;
+}
+
+.cont .col button:hover{
+    background-color: #fff;
+    color: #2C3E4F;
+}
+
+/* EN ALT */
+.foot-con{
+    background-color: #19262F;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+/* RESPONSİVE YAPMA,MOBİLDEN PCYE*/
+/* 576 ve üzeri */
+@media screen and (min-width:576px) {
+    /* .container{
+        max-width: 540px;
+    } */
+
+    html{
+        font-size: 7px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    /* .container{
+        max-width: 720px;
+    } */
+
+    html{
+        font-size: 8px;
+    }
+    .col{
+        width: 33.33%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    /* .container{
+        max-width: 960px;
+    } */
+
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    /* .container{
+        max-width: 1140px;
+    } */
+
+    html{
+        font-size: 10px;
+    }
+}

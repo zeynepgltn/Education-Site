@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Eğitim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@0,400;0,700;0&display=swap" rel="stylesheet"
+        font-family: "Lato" , sans-serif;>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@0,400;0,700;0&display=swap" rel="stylesheet"
+        font-family: "Montserrat" , sans-serif;>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container clearfix">
+            <div id="logo-box">
+                <a href="#" class="logo text-uppercase">START BOOTSTRAP</a>
+            </div>
+
+            <div id="nav-links">
+                <ul>
+                    <li class="nav-item text-uppercase nav-icon"><a href="" class="nav-link"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="nav-item text-uppercase"><a href="" class="nav-link">PORTFOLIO</a></li>
+                    <li class="nav-item text-uppercase"><a href="" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item text-uppercase"><a href="" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <img id="profile-img" class="img" src="avatar.png" alt="">
+            <h1 class="text-uppercase">Start Boostrap</h1>
+            <hr class="star-light">
+        </div>
+        <h2>Graphic Artist - Web Designer - Illustrator</h2>
+    </header>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="text-uppercase">Portfolıo</h2>
+            <hr class="star-dark">
+        </div>
+
+        <div id="portfolio-images" class="clearfix">
+            <div class="col">
+                <div class="portfolio-item">
+                    <a href="#">
+                        <img src="imgs\cabin.png" alt="" class="img-fluid-p">
+                        <div class="img-overlay">
+                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item"><a href="#"><img src="imgs\cake.png" alt="" class="img-fluid-p">
+                        <div class="img-overlay">
+                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </a></div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item"><a href="#"><img src="imgs\circus.png" alt="" class="img-fluid-p">
+                        <div class="img-overlay">
+                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </a></div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item"><a href="#"><img src="imgs\game.png" alt="" class="img-fluid-p">
+                        <div class="img-overlay">
+                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </a></div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item"><a href="#"><img src="imgs\safe.png" alt="" class="img-fluid-p">
+                        <div class="img-overlay">
+                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </a></div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item"><a href="#"><img src="imgs\submarine.png" alt="" class="img-fluid-p">
+                        <div class="img-overlay">
+                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="text-uppercase">About</h2>
+        <hr class="star-light">
+        <div id="about-text" class="clearfix">
+            <div class="left">
+                <p class="text">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes
+                    the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets
+                    for easy customization.</p>
+            </div>
+
+            <div class="right">
+                <p class="text">You can create your own custom avatar for the masthead, change the icon in the dividers,
+                    and add your email address to the contact form to make it fully functional!</p>
+            </div>
+            <div class="button"><button id="download"><i class="fa-solid fa-download"></i>Download Now!</button></div>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <div class="container">
+            <h2 class="con-h text-uppercase">Contact me</h2>
+            <hr class="star-dark">
+        </div>
+        <form id="con-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="e-mail" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <input type="text" id="phone" placeholder="Phone">
+            </div>
+            <div class="form-group">
+                <textarea id="message" rows="5" placeholder="Message"></textarea>
+            </div>
+
+        </form>
+        <button class="btn">Send</button>
+    </section>
+
+    <footer>
+        <div class="cont clearfix">
+            <div class="col">
+                <h4 class="text-uppercase">Location</h4>
+                <p>2215 John Daniel Drive Clark, MO 65243</p>
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">Around the Web</h4>
+                <ul>
+                    <li>
+                        <button><i class="fa-brands fa-facebook-f"></i></button>
+                    </li>
+                    <li><button><i class="fa-brands fa-twitter"></i></button></li>
+                    <li><button><i class="fa-brands fa-linkedin-in"></i></button></li>
+                    <li><button><i class="fa-brands fa-dribbble"></i></button></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">About Freelancer</h4>
+                <p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="foot-con">
+        <p>Copyright © Your Website 2021</p>
+    </div>
+</body>
+</html>
